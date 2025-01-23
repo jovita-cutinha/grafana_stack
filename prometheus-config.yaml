@@ -1,0 +1,22 @@
+scrape_configs:
+  - job_name: 'Server1Metrics'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 3s
+    static_configs:
+      - targets: ['server1:8084']
+        labels:
+          application: 'server1'
+  - job_name: 'Server2Metrics'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 3s
+    static_configs:
+      - targets: [ 'server2:8082' ]
+        labels:
+          application: 'server2'
+  - job_name: 'Server3Metrics'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 3s
+    static_configs:
+      - targets: [ 'server3:8083' ]
+        labels:
+          application: 'server3'
