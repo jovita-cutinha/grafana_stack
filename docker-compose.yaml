@@ -51,9 +51,9 @@ services:
     environment:
       - GF_SMTP_ENABLED=true
       - GF_SMTP_HOST=smtp.gmail.com:587    # SMTP server address and port
-      - GF_SMTP_USER=shreyaskadri156@gmail.com  # SMTP user (sender email address)
+      - GF_SMTP_USER=jovitacutinha01@gmail.com  # SMTP user (sender email address)
       - GF_SMTP_PASSWORD=exhv hpaw hvzu uvwk    # SMTP password
-      - GF_SMTP_FROM_ADDRESS=shreyaskadri156@gmail.com   # Email sender address
+      - GF_SMTP_FROM_ADDRESS=jovita01@gmail.com   # Email sender address
       - GF_SMTP_FROM_NAME=Alert-System     # Name displayed on alert emails
       - GF_SMTP_SKIP_VERIFY=false               # Skip certificate verification (useful for local testing)
       - GF_SMTP_TLS=true                        # Enable TLS encryption for SMTP
